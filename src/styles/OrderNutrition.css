@@ -1,0 +1,181 @@
+/* Order Nutrition Styles */
+
+.nutrition-container {
+  background: #f8f9ff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.nutrition-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+/* Loading State */
+.nutrition-loading {
+  text-align: center;
+  padding: 30px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.nutrition-loading p {
+  color: #666;
+  margin: 0;
+}
+
+/* Error State */
+.nutrition-error {
+  text-align: center;
+  padding: 20px;
+  color: #d32f2f;
+}
+
+.nutrition-error span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Daily Values Progress */
+.daily-values {
+  margin-bottom: 20px;
+}
+
+.daily-values h4 {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.progress-item {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.progress-value {
+  font-size: 0.8rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.progress-fill.over {
+  background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+}
+
+/* Totals Summary */
+.nutrition-totals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.total-item {
+  background: white;
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.total-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.total-label {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Health Tip */
+.health-tip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+.tip-icon {
+  font-size: 1.3rem;
+}
+
+.health-tip p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #2e7d32;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nutrition-container {
+    padding: 15px;
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .nutrition-totals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .total-value {
+    font-size: 1rem;
+  }
+}
