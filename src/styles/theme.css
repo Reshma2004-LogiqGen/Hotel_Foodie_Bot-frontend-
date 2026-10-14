@@ -1,0 +1,53 @@
+/* Food Friend design tokens and page reset - shared by the customer app and the admin dashboard */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #F9FAFB;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  /* Brand */
+  --ff-primary: #E11D48;
+  --ff-primary-hover: #BE123C;
+  --ff-primary-soft: #FDE8EC;
+  --ff-chip: #FCE7F3;
+
+  /* Text */
+  --ff-text: #1F2937;
+  --ff-text-body: #4B5563;
+  --ff-text-muted: #6B7280;
+
+  /* Surfaces & borders */
+  --ff-bg: #F9FAFB;
+  --ff-surface: #FFFFFF;
+  --ff-border: #D1D5DB;
+  --ff-border-light: #E5E7EB;
+
+  /* Status */
+  --ff-success: #10B981;
+  --ff-success-soft: #D1FAE5;
+  --ff-warning: #F97316;
+  --ff-warning-soft: #FFEDD5;
+  --ff-danger: #DC2626;
+  --ff-danger-soft: #FEE2E2;
+
+  /* Type */
+  --ff-font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --ff-font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* Shape */
+  --ff-radius: 12px;
+  --ff-radius-sm: 8px;
+  --ff-radius-pill: 999px;
+  --ff-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --ff-shadow-lg: 0 16px 40px rgba(16, 24, 40, 0.14);
+}
